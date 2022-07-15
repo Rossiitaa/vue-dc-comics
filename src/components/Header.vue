@@ -1,7 +1,7 @@
 <template>
-    <div class="container d-flex justify-content-between align-items-center p-5">
+    <div class=" d-flex justify-content-between align-items-center p-3">
         <img src="../assets/dc-logo.png" alt="DC LOGO">
-        <nav class="p-3">
+        <nav>
             <ul>
                 <li v-for="(element, index) in elementList" :key="index" class="p-3 text-uppercase fw-bold">
                     {{ element.text }}
@@ -68,13 +68,18 @@ export default {
 @import '../styles/general.scss';
 @import '../styles/variables.scss';
 
+nav {
+
+}
+
 img {
     height: 5rem;
 }
+
 ul li {
     text-decoration: none;
     display: inline-block;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 
     &:hover {
             border-bottom: 5px solid $brandColor;
