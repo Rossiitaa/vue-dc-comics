@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <header />
-    <main />
-    <footer />
+    <Header />
+    <Main />
+    <Footer />
   </div>
 </template>
 
@@ -22,12 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import '~bootstrap/scss/bootstrap.scss';
+@import './styles/general.scss';
+@import './styles/variables.scss';
 </style>
