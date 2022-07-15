@@ -1,7 +1,7 @@
 <template>
-    <div class="container d-flex justify-content-between align-items-center p-4">
+    <div class="container d-flex justify-content-between align-items-center p-5">
         <img src="../assets/dc-logo.png" alt="DC LOGO">
-        <nav>
+        <nav class="p-3">
             <ul>
                 <li v-for="(element, index) in elementList" :key="index" class="p-3 text-uppercase fw-bold">
                     {{ element.text }}
@@ -74,7 +74,11 @@ img {
 ul li {
     text-decoration: none;
     display: inline-block;
-    cursor: pointer;
     font-size: 0.9rem;
+
+    &:hover {
+            border-bottom: 5px solid $brandColor;
+            color: $brandColor;
+        }
 }
 </style>
