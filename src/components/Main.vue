@@ -1,9 +1,11 @@
 <template>
-    <div>
-        <h2 class="p-5 fs-3">
-            --- Content goes here ---
-        </h2>
-    </div>
+    <main>
+        <div class="container">
+            <h2 class="fs-3 pt-5 pb-5">
+                --- Content goes here ---
+            </h2>
+        </div>
+    </main>
 </template>
 
 <script>
@@ -13,10 +15,9 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import '../styles/general.scss';
 @import '../styles/variables.scss';
 
-    div {
+    main {
         background-color: $backgroundColor;
         color: #fff;
     }
