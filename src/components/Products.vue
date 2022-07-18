@@ -1,5 +1,15 @@
 <template>
-    
+    <section>
+        <div class="container">
+            <div class="products d-flex flex-wrap">
+                <ProductCard v-for="(product , index ) in products" :key="index"
+                :thumb='product.thumb'
+                :price='product.price'
+                :series='product.series'
+                :type='product.type' />
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
@@ -92,6 +102,15 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss' scoped>
+@import '../styles/general.scss';
+@import '../styles/variables.scss';
+
+section {
+    background-color: #1c1c1c;
+}
+
+
+
 
 </style>
