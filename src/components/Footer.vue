@@ -7,44 +7,31 @@
                     <div class="col-4">
                         <h3 class="text-white fs-5 mb-3">DC COMICS</h3>
                         <ul class="mb-4">
-                            <li>Characters</li>
-                            <li>Comics</li>
-                            <li>Movies</li>
-                            <li>Tv</li>
-                            <li>Games</li>
-                            <li>Videos</li>
-                            <li>News</li>
+                            <li v-for="(link , index) in Links1" :key="index">
+                                <a href="#">{{ link.text }}</a>
+                            </li>
                         </ul>
                         <h3 class="text-white fs-5 mb-3">SHOP</h3>
                         <ul>
-                            <li>Shop DC</li>
-                            <li>Shop DC Collectibles</li>
+                            <li v-for="(link, index) in Links2" :key="index">
+                                <a href="#">{{ link.text }}</a>
+                            </li>
                         </ul>
                     </div>
                         <div class="col-4">
                         <h3 class="text-white fs-5 mb-3">DC </h3>
                         <ul>
-                            <li>Terms Of Use</li>
-                            <li>Privacy policy (New)</li>
-                            <li>Ad Choices</li>
-                            <li>Advertising</li>
-                            <li>Jobs</li>
-                            <li>Subscriptions</li>
-                            <li>Talent Workshops</li>
-                            <li>CPSC Certificates</li>
-                            <li>Ratings</li>
-                            <li>Shop Help</li>
-                            <li>Contact Us</li>
+                            <li v-for="(link , index) in Links3" :key="index">
+                                <a href="#">{{ link.text }}</a>
+                            </li>
                         </ul>
                     </div>
                         <div class="col-4">
                         <h3 class="text-white fs-5 mb-3">SITES</h3>
                         <ul>
-                            <li>DC</li>
-                            <li>MAD Magazine</li>
-                            <li>DC Kids</li>
-                            <li>DC Universe</li>
-                            <li>DC Power Visa</li>
+                            <li v-for="(link , index) in Links4" :key="index">
+                                <a href="#">{{ link.text }}</a>
+                            </li>
                         </ul>
                     </div>
                 </section>
@@ -75,8 +62,98 @@
 
 <script>
 export default {
+    data: function () {
+    return {
+        Links1: [
+        {
+        text: "Characters",
+        },
+        {
+        text: "Comics",
+        },
+        {
+        text: "Movies",
+        },
+        {
+        text: "TV",
+        },
+        {
+        text: "Games",
+        },
+        {
+        text: "Videos",
+        },
+        {
+        text: "News",
+        },
+    ],
+    Links2: [
+        {
+        text: "Shop DC",
+        },
+        {
+        text: "Shop DC Collectibles",
+        },
+    ],
+        Links3: [
+        {
+        text: "Terms Of Use",
+        },
+        {
+        text: "Privacy Policy (New)",
+        },
+        {
+        text: "Ad Choices",
+        },
+        {
+        text: "Advertising",
+        },
+        {
+        text: "Jobs",
+        },
+        {
+        text: "Subscriptions",
+        },
+        {
+        text: "Talent Workshops",
+        },
+        {
+        text: "Privacy Policy (New)",
+        },
+        {
+        text: "CPSC Certificates",
+        },
+        {
+        text: "Ratings",
+        },
+        {
+        text: "Shop Help",
+        },
+        {
+        text: "Contact Us",
+        },
+    ],
+    Links4: [
+        {
+        text: "DC",
+        },
+        {
+        text: "MAD Magazine",
+        },
+        {
+        text: "DC Kids",
+        },
+        {
+        text: "DC Universe",
+        },
+        {
+        text: "DC Power Visa",
+        },
+    ],
+    };
+    },
+};
 
-}
 </script>
 
 <style lang='scss' scoped>
@@ -98,10 +175,11 @@ ul {
     padding: 0;
 }
 
-li {
+li a {
     list-style: none;
     color: rgba(255, 255, 255, 0.377);
     font-size: 0.8rem;
+    text-decoration: none;
 }
 
 a {
