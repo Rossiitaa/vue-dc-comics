@@ -191,7 +191,7 @@ a {
 }
 
 .footer-right {
-    width: 43%;
+    width: 45%;
     background-image: url(../assets/dc-logo-bg.png);
     background-size: cover;
     background-position: center;
@@ -199,7 +199,7 @@ a {
 }
 
 .footer-bottom {
-    height: 100px;
+    height:110px;
     background-color: #303030;
 }
 

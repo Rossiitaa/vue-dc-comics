@@ -1,12 +1,16 @@
 <template>
     <section>
-        <div class="container">
+        <div class="container pt-5">
             <div class="products d-flex flex-wrap">
                 <ProductCard v-for="(product , index ) in products" :key="index"
                 :thumb='product.thumb'
                 :price='product.price'
                 :series='product.series'
                 :type='product.type' />
+            </div>
+
+            <div class="d-flex justify-content-center pb-4 pt-3">
+                <a href="#">Load more</a>
             </div>
         </div>
     </section>
@@ -108,6 +112,28 @@ export default {
 
 section {
     background-color: #1c1c1c;
+    position: relative;
+}
+
+a {
+    font-size: .8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .6rem 3.1rem;
+    color: #fff;
+    background-color: $colorShop;
+    font-weight: bold;
+
+    &::after {
+        content: 'current series';
+        background-color: $colorShop;
+        padding: 0.5rem 1.5rem;
+        font-size: 1.6rem;
+        position: absolute;
+        top: -1.7rem;
+        left: 19rem;
+    }
+
 }
 
 
