@@ -24,7 +24,6 @@
                     <span class="px-3">DC POWER VISA</span>
                 </div>
             </div>
-            
         </div>
 
     </main>
