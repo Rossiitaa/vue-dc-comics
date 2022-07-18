@@ -1,11 +1,11 @@
 <template>
-    <div>
-        <div>
+    <div class="cont-card">
+        <div class="cont-img">
             <img :src="thumb" :alt="series">
         </div>
-        <h6>
+        <h4 class="text-white pt-4 pe-4">
             {{ series }}
-        </h6>
+        </h4>
     </div>
 </template>
 
@@ -20,6 +20,28 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss' scoped>
+
+    .cont-card {
+        width: calc(100% / 6);
+        margin: 24px 0px;
+
+
+    h4 {
+        text-transform: uppercase;
+        font-size: .9rem;
+        }
+
+    .cont-img{
+        width: 100%;
+    }
+
+    img {
+        width: 12rem;
+        height: 12rem;
+        object-fit: cover;
+        object-position: top;
+        }
+} 
 
 </style>
