@@ -1,10 +1,5 @@
 <template>
     <main>
-        <div class="container">
-            <h2 class="fs-3 pt-5 pb-5">
-                --- Content goes here ---
-            </h2>
-        </div>
         
         <div class="bg_shopDC">
             <div class="container shopDC p-5 text-white">
@@ -29,6 +24,7 @@
                     <span class="px-3">DC POWER VISA</span>
                 </div>
             </div>
+            
         </div>
 
     </main>
